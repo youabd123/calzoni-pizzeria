@@ -1,6 +1,7 @@
 # Calzoni Pizzeria
 
 A responsive frontend practice project for a fictional pizzeria website.
+https://youabd123.github.io/calzoni-pizzeria/
 
 ## Overview
 
