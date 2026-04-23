@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calzoni Pizzeria</title>
+    <meta
+      name="description"
+      content="Calzoni Pizzeria serverar klassiska pizzor, vegetariska favoriter, barnmenyer och fräscha sallader i en varm och familjär miljö."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="start">
+      <nav class="navbar">
+        <a class="brand" href="#start">Calzoni Pizzeria</a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#om-oss" data-sv="Om oss" data-en="About">Om oss</a>
+          <a href="#meny" data-sv="Meny" data-en="Menu">Meny</a>
+          <a href="#bildgalleri" data-sv="Bildgalleri" data-en="Gallery">Bildgalleri</a>
+          <a href="#kontakt" data-sv="Kontakt" data-en="Contact">Kontakt</a>
+        </div>
+
+        <button
+          class="language-toggle"
+          id="language-toggle"
+          type="button"
+          aria-label="Byt språk"
+        >
+          <span>EN</span>
+        </button>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p
+            class="eyebrow"
+            data-i18n
+            data-sv="Vedugnsinspirerat • Färska ingredienser • Familjekänsla"
+            data-en="Stone-baked inspiration • Fresh ingredients • Family atmosphere"
+          >
+            Vedugnsinspirerat • Färska ingredienser • Familjekänsla
+          </p>
+          <h1
+            data-i18n
+            data-sv="Pizza med smak för hela familjen"
+            data-en="Pizza made for the whole family"
+          >
+            Pizza med smak för hela familjen
+          </h1>
+          <p
+            class="lead"
+            data-i18n
+            data-sv="Upptäck våra mest omtyckta klassiker, vegetariska favoriter, barnmenyer och nygräddade specialiteter mitt i stan."
+            data-en="Discover our most loved classics, vegetarian favorites, kids meals, and freshly baked specialties in the heart of the city."
+          >
+            Upptäck våra mest omtyckta klassiker, vegetariska favoriter, barnmenyer och
+            nygräddade specialiteter mitt i stan.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="#meny"
+              data-i18n
+              data-sv="Se hela menyn"
+              data-en="See full menu"
+            >
+              Se hela menyn
+            </a>
+            <a
+              class="button button-secondary"
+              href="#kontakt"
+              data-i18n
+              data-sv="Kontakta oss"
+              data-en="Contact us"
+            >
+              Kontakta oss
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <p
+            class="hero-card-label"
+            data-i18n
+            data-sv="Populärast idag"
+            data-en="Most popular today"
+          >
+            Populärast idag
+          </p>
+          <h2>Calzoni Special</h2>
+          <p
+            data-i18n
+            data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing."
+            data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano, and house dressing."
+          >
+            Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing.
+          </p>
+          <div class="hero-card-meta">
+            <span data-i18n data-sv="12 min" data-en="12 min">12 min</span>
+            <span>125 kr</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-section" id="om-oss">
+        <div class="about-copy">
+          <p class="section-tag" data-i18n data-sv="Om oss" data-en="About us">Om oss</p>
+          <h2
+            data-i18n
+            data-sv="Calzoni Pizzeria bjuder på varm stämning och riktigt god mat"
+            data-en="Calzoni Pizzeria brings a warm atmosphere and really good food"
+          >
+            Calzoni Pizzeria bjuder på varm stämning och riktigt god mat
+          </h2>
+          <p
+            data-i18n
+            data-sv="Den här hemsidan är byggd som ett frontendprojekt men är designad för att kännas som en riktig pizzeria. Fokus ligger på tydlig meny, snygg layout och enkel navigation."
+            data-en="This website is built as a frontend project but designed to feel like a real pizzeria. The focus is on a clear menu, strong layout, and easy navigation."
+          >
+            Den här hemsidan är byggd som ett frontendprojekt men är designad för att kännas
+            som en riktig pizzeria. Fokus ligger på tydlig meny, snygg layout och enkel
+            navigation.
+          </p>
+          <p
+            data-i18n
+            data-sv="Du kan enkelt bygga vidare med fler sidor, onlinebeställning, karta, formulär eller fler språk senare."
+            data-en="You can easily expand it later with more pages, online ordering, a map, forms, or more languages."
+          >
+            Du kan enkelt bygga vidare med fler sidor, onlinebeställning, karta, formulär
+            eller fler språk senare.
+          </p>
+        </div>
+
+        <div class="info-panel">
+          <div>
+            <h3 data-i18n data-sv="Adress" data-en="Address">Adress</h3>
+            <p>Storgatan 12, 123 45 Stockholm</p>
+          </div>
+          <div>
+            <h3 data-i18n data-sv="Telefon" data-en="Phone">Telefon</h3>
+            <p>08-123 45 67</p>
+          </div>
+          <div>
+            <h3 data-i18n data-sv="Take away" data-en="Take away">Take away</h3>
+            <p
+              data-i18n
+              data-sv="Ring in din beställning eller hämta direkt på plats."
+              data-en="Call ahead with your order or pick it up directly in store."
+            >
+              Ring in din beställning eller hämta direkt på plats.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="meny">
+        <div class="section-heading">
+          <p class="section-tag" data-i18n data-sv="Meny" data-en="Menu">Meny</p>
+          <h2
+            data-i18n
+            data-sv="En hel meny med symboler för varje rätt"
+            data-en="A full menu with symbols for every dish"
+          >
+            En hel meny med symboler för varje rätt
+          </h2>
+          <p
+            data-i18n
+            data-sv="Ⓥ Vegetarisk • ★ Signatur • 👧 Barnfavorit • 🌶 Stark • 🥗 Fräsch"
+            data-en="Ⓥ Vegetarian • ★ Signature • 👧 Kids favorite • 🌶 Spicy • 🥗 Fresh"
+          >
+            Ⓥ Vegetarisk • ★ Signatur • 👧 Barnfavorit • 🌶 Stark • 🥗 Fräsch
+          </p>
+        </div>
+
+        <div class="menu-grid menu-grid-large">
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Klassiska pizzor" data-en="Classic pizzas">
+                Klassiska pizzor
+              </h3>
+              <span data-i18n data-sv="Populärt" data-en="Popular">Populärt</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong>Margherita</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, mozzarella, basilika"
+                    data-en="Tomato sauce, mozzarella, basil"
+                  >
+                    Tomatsås, mozzarella, basilika
+                  </p>
+                </div>
+                <span>95 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Vesuvio</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, skinka"
+                    data-en="Tomato sauce, cheese, ham"
+                  >
+                    Tomatsås, ost, skinka
+                  </p>
+                </div>
+                <span>105 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Capricciosa</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, skinka, champinjoner"
+                    data-en="Tomato sauce, cheese, ham, mushrooms"
+                  >
+                    Tomatsås, ost, skinka, champinjoner
+                  </p>
+                </div>
+                <span>115 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Hawaii</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, skinka, ananas"
+                    data-en="Tomato sauce, cheese, ham, pineapple"
+                  >
+                    Tomatsås, ost, skinka, ananas
+                  </p>
+                </div>
+                <span>115 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Calzone ★</strong>
+                  <p
+                    data-i18n
+                    data-sv="Inbakad pizza med tomatsås, ost, skinka"
+                    data-en="Folded pizza with tomato sauce, cheese, ham"
+                  >
+                    Inbakad pizza med tomatsås, ost, skinka
+                  </p>
+                </div>
+                <span>120 kr</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Specialpizzor" data-en="Special pizzas">
+                Specialpizzor
+              </h3>
+              <span data-i18n data-sv="Signatur" data-en="Signature">Signatur</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong>Calzoni Special ★</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano"
+                    data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano"
+                  >
+                    Tomatsås, ost, skinka, champinjoner, lök, färsk oregano
+                  </p>
+                </div>
+                <span>125 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Inferno 🌶</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, salami, jalapeño, chiliolja"
+                    data-en="Tomato sauce, cheese, salami, jalapeño, chili oil"
+                  >
+                    Tomatsås, ost, salami, jalapeño, chiliolja
+                  </p>
+                </div>
+                <span>129 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Nordica</strong>
+                  <p
+                    data-i18n
+                    data-sv="Crème fraîche, mozzarella, kyckling, rödlök, ruccola"
+                    data-en="Crème fraîche, mozzarella, chicken, red onion, arugula"
+                  >
+                    Crème fraîche, mozzarella, kyckling, rödlök, ruccola
+                  </p>
+                </div>
+                <span>132 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>BBQ House ★</strong>
+                  <p
+                    data-i18n
+                    data-sv="BBQ-sås, ost, pulled beef, paprika, rödlök"
+                    data-en="BBQ sauce, cheese, pulled beef, bell pepper, red onion"
+                  >
+                    BBQ-sås, ost, pulled beef, paprika, rödlök
+                  </p>
+                </div>
+                <span>135 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Kebab Deluxe</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, kebabkött, lök, feferoni, kebabsås"
+                    data-en="Tomato sauce, cheese, kebab meat, onion, pepperoncini, kebab sauce"
+                  >
+                    Tomatsås, ost, kebabkött, lök, feferoni, kebabsås
+                  </p>
+                </div>
+                <span>135 kr</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Vegetariskt" data-en="Vegetarian">Vegetariskt</h3>
+              <span>Ⓥ</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong>Verde Ⓥ</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, paprika, oliver, rödlök"
+                    data-en="Tomato sauce, cheese, bell pepper, olives, red onion"
+                  >
+                    Tomatsås, ost, paprika, oliver, rödlök
+                  </p>
+                </div>
+                <span>112 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Bianco Veg Ⓥ</strong>
+                  <p
+                    data-i18n
+                    data-sv="Crème fraîche, mozzarella, spenat, fetaost"
+                    data-en="Crème fraîche, mozzarella, spinach, feta cheese"
+                  >
+                    Crème fraîche, mozzarella, spenat, fetaost
+                  </p>
+                </div>
+                <span>118 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Halloumi Deluxe Ⓥ</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, halloumi, zucchini, ruccola"
+                    data-en="Tomato sauce, cheese, halloumi, zucchini, arugula"
+                  >
+                    Tomatsås, ost, halloumi, zucchini, ruccola
+                  </p>
+                </div>
+                <span>125 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Truffle Garden Ⓥ ★</strong>
+                  <p
+                    data-i18n
+                    data-sv="Crème fraîche, mozzarella, svamp, tryffelolja, parmesan"
+                    data-en="Crème fraîche, mozzarella, mushrooms, truffle oil, parmesan"
+                  >
+                    Crème fraîche, mozzarella, svamp, tryffelolja, parmesan
+                  </p>
+                </div>
+                <span>129 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Greek Summer Ⓥ 🥗</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomatsås, ost, fetaost, oliver, tomat, rödlök"
+                    data-en="Tomato sauce, cheese, feta cheese, olives, tomato, red onion"
+                  >
+                    Tomatsås, ost, fetaost, oliver, tomat, rödlök
+                  </p>
+                </div>
+                <span>122 kr</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Barnmeny" data-en="Kids menu">Barnmeny</h3>
+              <span>👧</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong>Mini Margherita 👧</strong>
+                  <p
+                    data-i18n
+                    data-sv="Liten pizza med ost och tomatsås"
+                    data-en="Small pizza with cheese and tomato sauce"
+                  >
+                    Liten pizza med ost och tomatsås
+                  </p>
+                </div>
+                <span>65 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Mini Vesuvio 👧</strong>
+                  <p
+                    data-i18n
+                    data-sv="Liten pizza med skinka och ost"
+                    data-en="Small pizza with ham and cheese"
+                  >
+                    Liten pizza med skinka och ost
+                  </p>
+                </div>
+                <span>69 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Nuggets & Fries 👧</strong>
+                  <p
+                    data-i18n
+                    data-sv="Kycklingnuggets med pommes och mild dip"
+                    data-en="Chicken nuggets with fries and a mild dip"
+                  >
+                    Kycklingnuggets med pommes och mild dip
+                  </p>
+                </div>
+                <span>75 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Pannkaksrulle 👧</strong>
+                  <p
+                    data-i18n
+                    data-sv="Serveras med sylt och glass"
+                    data-en="Served with jam and ice cream"
+                  >
+                    Serveras med sylt och glass
+                  </p>
+                </div>
+                <span>59 kr</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Sallader" data-en="Salads">Sallader</h3>
+              <span>🥗</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong>Caesar 🥗</strong>
+                  <p
+                    data-i18n
+                    data-sv="Romansallad, kyckling, parmesan, krutonger"
+                    data-en="Romaine lettuce, chicken, parmesan, croutons"
+                  >
+                    Romansallad, kyckling, parmesan, krutonger
+                  </p>
+                </div>
+                <span>119 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Greek Salad 🥗 Ⓥ</strong>
+                  <p
+                    data-i18n
+                    data-sv="Tomat, gurka, oliver, fetaost, rödlök"
+                    data-en="Tomato, cucumber, olives, feta cheese, red onion"
+                  >
+                    Tomat, gurka, oliver, fetaost, rödlök
+                  </p>
+                </div>
+                <span>112 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Kebab Salad 🥗</strong>
+                  <p
+                    data-i18n
+                    data-sv="Grönmix, kebabkött, tomat, lök, kebabsås"
+                    data-en="Green mix, kebab meat, tomato, onion, kebab sauce"
+                  >
+                    Grönmix, kebabkött, tomat, lök, kebabsås
+                  </p>
+                </div>
+                <span>122 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong>Halloumi Salad 🥗 Ⓥ</strong>
+                  <p
+                    data-i18n
+                    data-sv="Sallad, halloumi, paprika, granatäpple, lime"
+                    data-en="Lettuce, halloumi, bell pepper, pomegranate, lime"
+                  >
+                    Sallad, halloumi, paprika, granatäpple, lime
+                  </p>
+                </div>
+                <span>124 kr</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card-header">
+              <h3 data-i18n data-sv="Dryck & dessert" data-en="Drinks & dessert">
+                Dryck & dessert
+              </h3>
+              <span data-i18n data-sv="Tillbehör" data-en="Extras">Tillbehör</span>
+            </div>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <strong
+                    data-i18n
+                    data-sv="Läsk 33 cl"
+                    data-en="Soft drink 33 cl"
+                  >
+                    Läsk 33 cl
+                  </strong>
+                  <p data-i18n data-sv="Cola, Fanta, Sprite" data-en="Cola, Fanta, Sprite">
+                    Cola, Fanta, Sprite
+                  </p>
+                </div>
+                <span>20 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong data-i18n data-sv="Mineralvatten" data-en="Sparkling water">
+                    Mineralvatten
+                  </strong>
+                  <p
+                    data-i18n
+                    data-sv="Naturell eller citron"
+                    data-en="Still or lemon"
+                  >
+                    Naturell eller citron
+                  </p>
+                </div>
+                <span>18 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong data-i18n data-sv="Tiramisu" data-en="Tiramisu">Tiramisu</strong>
+                  <p
+                    data-i18n
+                    data-sv="Krämig italiensk dessert"
+                    data-en="Creamy Italian dessert"
+                  >
+                    Krämig italiensk dessert
+                  </p>
+                </div>
+                <span>55 kr</span>
+              </li>
+              <li>
+                <div>
+                  <strong data-i18n data-sv="Glassbägare" data-en="Ice cream cup">
+                    Glassbägare
+                  </strong>
+                  <p
+                    data-i18n
+                    data-sv="Vanilj, choklad eller jordgubb"
+                    data-en="Vanilla, chocolate, or strawberry"
+                  >
+                    Vanilj, choklad eller jordgubb
+                  </p>
+                </div>
+                <span>39 kr</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="bildgalleri">
+        <div class="section-heading">
+          <p class="section-tag" data-i18n data-sv="Bildgalleri" data-en="Gallery">
+            Bildgalleri
+          </p>
+          <h2
+            data-i18n
+            data-sv="En inblick i känslan på Calzoni"
+            data-en="A look into the Calzoni atmosphere"
+          >
+            En inblick i känslan på Calzoni
+          </h2>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80"
+              alt="Nygräddad pizza på träfat"
+            />
+            <div class="gallery-card-copy">
+              <h3 data-i18n data-sv="Nybakat varje dag" data-en="Freshly baked every day">
+                Nybakat varje dag
+              </h3>
+              <p
+                data-i18n
+                data-sv="Krispiga bottnar, smält ost och rikligt med färska toppings."
+                data-en="Crispy crusts, melted cheese, and generous fresh toppings."
+              >
+                Krispiga bottnar, smält ost och rikligt med färska toppings.
+              </p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=80"
+              alt="Restaurangbord med pizza och sallad"
+            />
+            <div class="gallery-card-copy">
+              <h3 data-i18n data-sv="Perfekt för middag" data-en="Perfect for dinner">
+                Perfekt för middag
+              </h3>
+              <p
+                data-i18n
+                data-sv="Kom in med familjen eller hämta med dig favoriterna hem."
+                data-en="Drop in with family or pick up your favorites to go."
+              >
+                Kom in med familjen eller hämta med dig favoriterna hem.
+              </p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+              alt="Närbild på pizza med grönsaker"
+            />
+            <div class="gallery-card-copy">
+              <h3 data-i18n data-sv="Något för alla" data-en="Something for everyone">
+                Något för alla
+              </h3>
+              <p
+                data-i18n
+                data-sv="Vegetariskt, barnmenyer och klassiska pizzor i samma meny."
+                data-en="Vegetarian options, kids meals, and classic pizzas in one menu."
+              >
+                Vegetariskt, barnmenyer och klassiska pizzor i samma meny.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontakt">
+        <div class="contact-card">
+          <p class="section-tag" data-i18n data-sv="Kontakt" data-en="Contact">Kontakt</p>
+          <h2
+            data-i18n
+            data-sv="Besök oss eller hör av dig"
+            data-en="Visit us or get in touch"
+          >
+            Besök oss eller hör av dig
+          </h2>
+          <div class="contact-details">
+            <p>
+              <strong data-i18n data-sv="Telefon:" data-en="Phone:">Telefon:</strong>
+              08-123 45 67
+            </p>
+            <p>
+              <strong data-i18n data-sv="E-post:" data-en="Email:">E-post:</strong>
+              hej@calzonipizzeria.se
+            </p>
+            <p>
+              <strong data-i18n data-sv="Adress:" data-en="Address:">Adress:</strong>
+              Storgatan 12, 123 45 Stockholm
+            </p>
+          </div>
+        </div>
+
+        <div class="hours-card">
+          <p class="section-tag" data-i18n data-sv="Öppettider" data-en="Opening hours">
+            Öppettider
+          </p>
+          <h2
+            data-i18n
+            data-sv="Vi har öppet hela veckan"
+            data-en="We are open all week"
+          >
+            Vi har öppet hela veckan
+          </h2>
+          <ul class="hours-list">
+            <li>
+              <span
+                data-i18n
+                data-sv="Måndag - Torsdag"
+                data-en="Monday - Thursday"
+              >
+                Måndag - Torsdag
+              </span>
+              <span>11:00 - 21:00</span>
+            </li>
+            <li>
+              <span data-i18n data-sv="Fredag" data-en="Friday">Fredag</span>
+              <span>11:00 - 22:00</span>
+            </li>
+            <li>
+              <span data-i18n data-sv="Lördag" data-en="Saturday">Lördag</span>
+              <span>12:00 - 22:00</span>
+            </li>
+            <li>
+              <span data-i18n data-sv="Söndag" data-en="Sunday">Söndag</span>
+              <span>12:00 - 20:00</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p
+        data-i18n
+        data-sv="Calzoni Pizzeria • Enkel demo för frontendträning"
+        data-en="Calzoni Pizzeria • Simple demo for frontend practice"
+      >
+        Calzoni Pizzeria • Enkel demo för frontendträning
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
