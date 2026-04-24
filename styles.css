@@ -32,6 +32,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(242, 179, 93, 0.45), transparent 28%),
     linear-gradient(180deg, #fff8ef 0%, #f8efe3 52%, #f4e1cf 100%);
+  padding-top: 7.5rem;
 }
 
 img {
@@ -45,6 +46,7 @@ a {
 }
 
 .hero,
+.site-header,
 .gallery-section,
 .menu-section,
 .about-section,
@@ -52,6 +54,14 @@ a {
 .site-footer {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
+}
+
+.site-header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
 }
 
 .hero {
@@ -67,14 +77,10 @@ a {
   align-items: center;
   gap: 1rem;
   padding: 0.95rem 1.1rem;
-  margin-top: 0.6rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 252, 247, 0.76);
   backdrop-filter: blur(18px);
-  position: sticky;
-  top: 1rem;
-  z-index: 20;
 }
 
 .brand,
@@ -281,7 +287,7 @@ h3 {
 .about-section,
 .contact-section {
   padding: 2rem 0 4rem;
-  scroll-margin-top: 7rem;
+  scroll-margin-top: 8.5rem;
 }
 
 .section-heading {
@@ -456,6 +462,10 @@ h3 {
 }
 
 @media (max-width: 920px) {
+  body {
+    padding-top: 7rem;
+  }
+
   .hero-content,
   .gallery-grid,
   .menu-grid,
@@ -474,6 +484,10 @@ h3 {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding-top: 6.5rem;
+  }
+
   .navbar {
     grid-template-columns: 1fr auto auto;
     border-radius: 24px;
