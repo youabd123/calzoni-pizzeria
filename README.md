@@ -1,56 +1,23 @@
 # Calzoni Pizzeria
 
-A responsive frontend practice project for a fictional pizzeria website.
-https://youabd123.github.io/calzoni-pizzeria/
+A responsive restaurant website built with HTML, CSS, and JavaScript.
 
-## Overview
+[Live Demo](https://youabd123.github.io/calzoni-pizzeria/)
 
-Calzoni Pizzeria is a simple static website built with HTML, CSS, and JavaScript. The project is designed as a learning exercise for frontend development and includes:
+## About
 
-- a landing section with hero content
-- a full menu with multiple categories
-- a bilingual interface with Swedish and English text
-- a gallery section
-- contact information and opening hours
-- responsive navigation for desktop and mobile
+Calzoni Pizzeria is a frontend project created to present a fictional pizzeria in a clean and professional way. The website focuses on visual design, clear navigation, responsive layout, and a bilingual experience in Swedish and English.
+
+## Features
+
+- Responsive one-page layout
+- Fixed top navigation
+- Bilingual content toggle
+- Full menu, gallery, contact details, and opening hours
+- Polished restaurant-style visual design
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
-
-## Project Structure
-
-```text
-.
-|-- index.html
-|-- styles.css
-|-- script.js
-|-- README.md
-`-- .gitignore
-```
-
-## Getting Started
-
-1. Open `index.html` in your browser.
-2. Explore the different sections from the top navigation.
-3. Use the language button in the header to switch between Swedish and English.
-
-## Learning Goals
-
-This project focuses on:
-
-- semantic HTML structure
-- responsive layout design
-- section-based navigation
-- simple multilingual content switching
-- preparing a project for GitHub
-
-## Next Ideas
-
-- add local image assets instead of remote image URLs
-- split the page into multiple HTML pages
-- add an online booking or order form
-- improve animations and visual polish
-- deploy the site with GitHub Pages
