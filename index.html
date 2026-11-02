@@ -52,10 +52,11 @@
     </div>
 
     <header class="hero" id="start">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-content">
         <div class="hero-copy">
           <p
-            class="eyebrow"
+            class="eyebrow hero-reveal"
             data-i18n
             data-sv="Vedugnsinspirerat • Färska ingredienser • Familjekänsla"
             data-en="Stone-baked inspiration • Fresh ingredients • Family atmosphere"
@@ -63,6 +64,7 @@
             Vedugnsinspirerat • Färska ingredienser • Familjekänsla
           </p>
           <h1
+            class="hero-reveal"
             data-i18n
             data-sv="Pizza med smak för hela familjen"
             data-en="Pizza made for the whole family"
@@ -70,7 +72,7 @@
             Pizza med smak för hela familjen
           </h1>
           <p
-            class="lead"
+            class="lead hero-reveal"
             data-i18n
             data-sv="Upptäck våra mest omtyckta klassiker, vegetariska favoriter, barnmenyer och nygräddade specialiteter mitt i stan."
             data-en="Discover our most loved classics, vegetarian favorites, kids meals, and freshly baked specialties in the heart of the city."
@@ -78,48 +80,82 @@
             Upptäck våra mest omtyckta klassiker, vegetariska favoriter, barnmenyer och
             nygräddade specialiteter mitt i stan.
           </p>
-          <div class="hero-actions">
-            <a
-              class="button button-primary"
-              href="#meny"
-              data-i18n
-              data-sv="Se hela menyn"
-              data-en="See full menu"
-            >
-              Se hela menyn
+          <div class="hero-actions hero-reveal">
+            <a class="button button-primary" href="#meny">
+              <span data-i18n data-sv="Se menyn" data-en="View menu">Se menyn</span>
+              <svg class="button-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <path
+                  d="M4 10h11m-4-4 4 4-4 4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
-            <a
-              class="button button-secondary"
-              href="#kontakt"
-              data-i18n
-              data-sv="Kontakta oss"
-              data-en="Contact us"
-            >
-              Kontakta oss
+            <a class="button button-secondary" href="tel:+4681234567">
+              <svg class="button-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <path
+                  d="M5.5 3.5h2.3l1.2 3-1.6 1.1a8.5 8.5 0 0 0 4 4l1.1-1.6 3 1.2v2.3a1.5 1.5 0 0 1-1.6 1.5A12 12 0 0 1 4 5.1a1.5 1.5 0 0 1 1.5-1.6Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span data-i18n data-sv="Beställ nu" data-en="Order now">Beställ nu</span>
             </a>
           </div>
+          <p
+            class="hero-note hero-reveal"
+            data-i18n
+            data-sv="Ring 08-123 45 67 för take away – hämta direkt på Storgatan 12."
+            data-en="Call 08-123 45 67 for take away – pick up directly at Storgatan 12."
+          >
+            Ring 08-123 45 67 för take away – hämta direkt på Storgatan 12.
+          </p>
         </div>
 
-        <div class="hero-card">
-          <p
-            class="hero-card-label"
-            data-i18n
-            data-sv="Populärast idag"
-            data-en="Most popular today"
-          >
-            Populärast idag
-          </p>
-          <h2>Calzoni Special</h2>
-          <p
-            data-i18n
-            data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing."
-            data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano, and house dressing."
-          >
-            Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing.
-          </p>
-          <div class="hero-card-meta">
-            <span data-i18n data-sv="12 min" data-en="12 min">12 min</span>
-            <span>125 kr</span>
+        <div class="hero-visual hero-reveal">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=80"
+              srcset="
+                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80   600w,
+                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=80 1100w,
+                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1600&q=80 1600w
+              "
+              sizes="(max-width: 920px) 100vw, 44vw"
+              width="1100"
+              height="1375"
+              alt="Nygräddad pizza med mozzarella och basilika från vedugnen"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+
+          <div class="hero-card">
+            <p
+              class="hero-card-label"
+              data-i18n
+              data-sv="Populärast idag"
+              data-en="Most popular today"
+            >
+              Populärast idag
+            </p>
+            <h2>Calzoni Special</h2>
+            <p
+              data-i18n
+              data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing."
+              data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano, and house dressing."
+            >
+              Tomatsås, ost, skinka, champinjoner, lök, färsk oregano och husets dressing.
+            </p>
+            <div class="hero-card-meta">
+              <span data-i18n data-sv="12 min" data-en="12 min">12 min</span>
+              <span>125 kr</span>
+            </div>
           </div>
         </div>
       </div>
