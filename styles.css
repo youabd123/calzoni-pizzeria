@@ -1,16 +1,18 @@
 :root {
-  --bg: #f8efe3;
-  --bg-soft: #fff7ef;
-  --surface: rgba(255, 248, 239, 0.82);
-  --surface-strong: #fffdf8;
-  --text: #26150f;
-  --muted: #6d554b;
-  --primary: #b33a24;
-  --primary-dark: #7d2112;
-  --accent: #f2b35d;
-  --olive: #4e6b46;
-  --line: rgba(70, 32, 18, 0.12);
-  --shadow: 0 24px 60px rgba(66, 29, 17, 0.14);
+  color-scheme: dark;
+  --bg: #0f0c0a;
+  --bg-soft: #17120e;
+  --surface: rgba(28, 22, 18, 0.82);
+  --surface-strong: #1e1711;
+  --text: #f3ebdd;
+  --muted: #b4a48f;
+  --primary: #d4a853;
+  --primary-dark: #b98c3a;
+  --accent: #e6c272;
+  --ember: #b33a24;
+  --on-primary: #15100b;
+  --line: rgba(212, 168, 83, 0.18);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -30,8 +32,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(242, 179, 93, 0.45), transparent 28%),
-    linear-gradient(180deg, #fff8ef 0%, #f8efe3 52%, #f4e1cf 100%);
+    radial-gradient(circle at top left, rgba(212, 168, 83, 0.22), transparent 30%),
+    linear-gradient(180deg, #17120e 0%, #0f0c0a 52%, #0b0908 100%);
   padding-top: 7.5rem;
 }
 
@@ -79,7 +81,7 @@ a {
   padding: 0.95rem 1.1rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 252, 247, 0.76);
+  background: rgba(20, 16, 13, 0.74);
   backdrop-filter: blur(18px);
 }
 
@@ -87,12 +89,13 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.04em;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .brand {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   white-space: nowrap;
 }
 
@@ -144,8 +147,8 @@ h3 {
 }
 
 .language-toggle {
-  border: 1px solid rgba(179, 58, 36, 0.18);
-  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid rgba(212, 168, 83, 0.35);
+  background: rgba(28, 22, 18, 0.9);
   color: var(--primary);
   border-radius: 999px;
   padding: 0.72rem 1rem;
@@ -161,7 +164,7 @@ h3 {
 .language-toggle:hover {
   transform: translateY(-2px);
   background: var(--primary);
-  color: #fff8f0;
+  color: var(--on-primary);
 }
 
 .hero-content {
@@ -183,8 +186,8 @@ h3 {
 }
 
 .hero-copy h1 {
-  font-size: clamp(4rem, 8vw, 7.2rem);
-  line-height: 0.92;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 1.02;
   margin: 0.6rem 0 1rem;
 }
 
@@ -222,7 +225,7 @@ h3 {
 
 .button-primary {
   background: var(--primary);
-  color: #fff8f0;
+  color: var(--on-primary);
 }
 
 .button-primary:hover {
@@ -231,7 +234,8 @@ h3 {
 
 .button-secondary {
   border: 1px solid var(--line);
-  background: rgba(255, 253, 248, 0.72);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
 }
 
 .hero-card,
@@ -260,11 +264,11 @@ h3 {
   width: 14rem;
   height: 14rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(242, 179, 93, 0.65), transparent 70%);
+  background: radial-gradient(circle, rgba(212, 168, 83, 0.35), transparent 70%);
 }
 
 .hero-card h2 {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   margin: 0.4rem 0 0.75rem;
 }
 
@@ -300,8 +304,8 @@ h3 {
 .contact-card h2,
 .hours-card h2 {
   margin: 0.2rem 0 0.7rem;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 0.95;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.08;
 }
 
 .section-heading p,
@@ -344,7 +348,7 @@ h3 {
 .menu-card-header h3,
 .info-panel h3 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .menu-grid {
@@ -370,7 +374,7 @@ h3 {
 .menu-card-header span {
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  background: rgba(179, 58, 36, 0.1);
+  background: rgba(212, 168, 83, 0.12);
   color: var(--primary);
   font-weight: 800;
   font-size: 0.85rem;
@@ -521,7 +525,7 @@ h3 {
   }
 
   .hero-copy h1 {
-    font-size: clamp(3.2rem, 17vw, 5rem);
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
   }
 
   .hero-card,
