@@ -234,420 +234,358 @@
           </p>
         </div>
 
+        <div class="menu-featured" aria-label="Husets favoriter">
+          <article class="featured-card">
+            <div class="featured-media">
+              <img src="images/menu-calzoni-special.jpg" alt="" width="800" height="600" loading="lazy" />
+              <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+            </div>
+            <div class="featured-body">
+              <h3>Calzoni Special</h3>
+              <p data-i18n data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano" data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano">Tomatsås, ost, skinka, champinjoner, lök, färsk oregano</p>
+              <div class="featured-meta">
+                <span class="featured-cat" data-i18n data-sv="Specialpizzor" data-en="Special pizzas">Specialpizzor</span>
+                <span class="menu-price">125 kr</span>
+              </div>
+            </div>
+          </article>
+          <article class="featured-card">
+            <div class="featured-media">
+              <img src="images/menu-bbq-house.jpg" alt="" width="800" height="600" loading="lazy" />
+              <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+            </div>
+            <div class="featured-body">
+              <h3>BBQ House</h3>
+              <p data-i18n data-sv="BBQ-sås, ost, pulled beef, paprika, rödlök" data-en="BBQ sauce, cheese, pulled beef, bell pepper, red onion">BBQ-sås, ost, pulled beef, paprika, rödlök</p>
+              <div class="featured-meta">
+                <span class="featured-cat" data-i18n data-sv="Specialpizzor" data-en="Special pizzas">Specialpizzor</span>
+                <span class="menu-price">135 kr</span>
+              </div>
+            </div>
+          </article>
+          <article class="featured-card">
+            <div class="featured-media">
+              <img src="images/menu-truffle-garden.jpg" alt="" width="800" height="600" loading="lazy" />
+              <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+            </div>
+            <div class="featured-body">
+              <h3>Truffle Garden</h3>
+              <p data-i18n data-sv="Crème fraîche, mozzarella, svamp, tryffelolja, parmesan" data-en="Crème fraîche, mozzarella, mushrooms, truffle oil, parmesan">Crème fraîche, mozzarella, svamp, tryffelolja, parmesan</p>
+              <div class="featured-meta">
+                <span class="featured-cat" data-i18n data-sv="Vegetariskt" data-en="Vegetarian">Vegetariskt</span>
+                <span class="menu-price">129 kr</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-filters" role="group" aria-label="Filtrera menyn">
+          <button class="menu-filter is-active" type="button" data-filter="all" aria-pressed="true" data-i18n data-sv="Alla" data-en="All">Alla</button>
+          <button class="menu-filter" type="button" data-filter="klassiska" aria-pressed="false" data-i18n data-sv="Klassiska pizzor" data-en="Classic pizzas">Klassiska pizzor</button>
+          <button class="menu-filter" type="button" data-filter="special" aria-pressed="false" data-i18n data-sv="Specialpizzor" data-en="Special pizzas">Specialpizzor</button>
+          <button class="menu-filter" type="button" data-filter="vegetariskt" aria-pressed="false" data-i18n data-sv="Vegetariskt" data-en="Vegetarian">Vegetariskt</button>
+          <button class="menu-filter" type="button" data-filter="barn" aria-pressed="false" data-i18n data-sv="Barnmeny" data-en="Kids menu">Barnmeny</button>
+          <button class="menu-filter" type="button" data-filter="sallader" aria-pressed="false" data-i18n data-sv="Sallader" data-en="Salads">Sallader</button>
+          <button class="menu-filter" type="button" data-filter="dryck" aria-pressed="false" data-i18n data-sv="Dryck & dessert" data-en="Drinks & dessert">Dryck & dessert</button>
+        </div>
+
         <div class="menu-grid menu-grid-large">
-          <article class="menu-card">
+          <article class="menu-card" data-category="klassiska">
             <div class="menu-card-header">
-              <h3 data-i18n data-sv="Klassiska pizzor" data-en="Classic pizzas">
-                Klassiska pizzor
-              </h3>
-              <span data-i18n data-sv="Populärt" data-en="Popular">Populärt</span>
+              <h3 data-i18n data-sv="Klassiska pizzor" data-en="Classic pizzas">Klassiska pizzor</h3>
+              <span class="menu-card-tag" data-i18n data-sv="Populärt" data-en="Popular">Populärt</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong>Margherita</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, mozzarella, basilika"
-                    data-en="Tomato sauce, mozzarella, basil"
-                  >
-                    Tomatsås, mozzarella, basilika
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Margherita</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, mozzarella, basilika" data-en="Tomato sauce, mozzarella, basil">Tomatsås, mozzarella, basilika</p>
                 </div>
-                <span>95 kr</span>
+                <span class="menu-price">95 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Vesuvio</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, skinka"
-                    data-en="Tomato sauce, cheese, ham"
-                  >
-                    Tomatsås, ost, skinka
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Vesuvio</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, skinka" data-en="Tomato sauce, cheese, ham">Tomatsås, ost, skinka</p>
                 </div>
-                <span>105 kr</span>
+                <span class="menu-price">105 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Capricciosa</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, skinka, champinjoner"
-                    data-en="Tomato sauce, cheese, ham, mushrooms"
-                  >
-                    Tomatsås, ost, skinka, champinjoner
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Capricciosa</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, skinka, champinjoner" data-en="Tomato sauce, cheese, ham, mushrooms">Tomatsås, ost, skinka, champinjoner</p>
                 </div>
-                <span>115 kr</span>
+                <span class="menu-price">115 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Hawaii</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, skinka, ananas"
-                    data-en="Tomato sauce, cheese, ham, pineapple"
-                  >
-                    Tomatsås, ost, skinka, ananas
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Hawaii</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, skinka, ananas" data-en="Tomato sauce, cheese, ham, pineapple">Tomatsås, ost, skinka, ananas</p>
                 </div>
-                <span>115 kr</span>
+                <span class="menu-price">115 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Calzone ★</strong>
-                  <p
-                    data-i18n
-                    data-sv="Inbakad pizza med tomatsås, ost, skinka"
-                    data-en="Folded pizza with tomato sauce, cheese, ham"
-                  >
-                    Inbakad pizza med tomatsås, ost, skinka
-                  </p>
+              <li class="menu-item is-popular">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Calzone</strong>
+                    <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+                  </div>
+                  <p data-i18n data-sv="Inbakad pizza med tomatsås, ost, skinka" data-en="Folded pizza with tomato sauce, cheese, ham">Inbakad pizza med tomatsås, ost, skinka</p>
                 </div>
-                <span>120 kr</span>
+                <span class="menu-price">120 kr</span>
               </li>
             </ul>
           </article>
-
-          <article class="menu-card">
+          <article class="menu-card" data-category="special">
             <div class="menu-card-header">
-              <h3 data-i18n data-sv="Specialpizzor" data-en="Special pizzas">
-                Specialpizzor
-              </h3>
-              <span data-i18n data-sv="Signatur" data-en="Signature">Signatur</span>
+              <h3 data-i18n data-sv="Specialpizzor" data-en="Special pizzas">Specialpizzor</h3>
+              <span class="menu-card-tag" data-i18n data-sv="Signatur" data-en="Signature">Signatur</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong>Calzoni Special ★</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano"
-                    data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano"
-                  >
-                    Tomatsås, ost, skinka, champinjoner, lök, färsk oregano
-                  </p>
+              <li class="menu-item is-popular">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Calzoni Special</strong>
+                    <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, skinka, champinjoner, lök, färsk oregano" data-en="Tomato sauce, cheese, ham, mushrooms, onion, fresh oregano">Tomatsås, ost, skinka, champinjoner, lök, färsk oregano</p>
                 </div>
-                <span>125 kr</span>
+                <span class="menu-price">125 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Inferno 🌶</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, salami, jalapeño, chiliolja"
-                    data-en="Tomato sauce, cheese, salami, jalapeño, chili oil"
-                  >
-                    Tomatsås, ost, salami, jalapeño, chiliolja
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Inferno</strong>
+                    <span class="badge badge-tag" data-i18n data-sv="Stark" data-en="Spicy">Stark</span>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, salami, jalapeño, chiliolja" data-en="Tomato sauce, cheese, salami, jalapeño, chili oil">Tomatsås, ost, salami, jalapeño, chiliolja</p>
                 </div>
-                <span>129 kr</span>
+                <span class="menu-price">129 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Nordica</strong>
-                  <p
-                    data-i18n
-                    data-sv="Crème fraîche, mozzarella, kyckling, rödlök, ruccola"
-                    data-en="Crème fraîche, mozzarella, chicken, red onion, arugula"
-                  >
-                    Crème fraîche, mozzarella, kyckling, rödlök, ruccola
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Nordica</strong>
+                  </div>
+                  <p data-i18n data-sv="Crème fraîche, mozzarella, kyckling, rödlök, ruccola" data-en="Crème fraîche, mozzarella, chicken, red onion, arugula">Crème fraîche, mozzarella, kyckling, rödlök, ruccola</p>
                 </div>
-                <span>132 kr</span>
+                <span class="menu-price">132 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>BBQ House ★</strong>
-                  <p
-                    data-i18n
-                    data-sv="BBQ-sås, ost, pulled beef, paprika, rödlök"
-                    data-en="BBQ sauce, cheese, pulled beef, bell pepper, red onion"
-                  >
-                    BBQ-sås, ost, pulled beef, paprika, rödlök
-                  </p>
+              <li class="menu-item is-popular">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>BBQ House</strong>
+                    <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+                  </div>
+                  <p data-i18n data-sv="BBQ-sås, ost, pulled beef, paprika, rödlök" data-en="BBQ sauce, cheese, pulled beef, bell pepper, red onion">BBQ-sås, ost, pulled beef, paprika, rödlök</p>
                 </div>
-                <span>135 kr</span>
+                <span class="menu-price">135 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Kebab Deluxe</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, kebabkött, lök, feferoni, kebabsås"
-                    data-en="Tomato sauce, cheese, kebab meat, onion, pepperoncini, kebab sauce"
-                  >
-                    Tomatsås, ost, kebabkött, lök, feferoni, kebabsås
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Kebab Deluxe</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, kebabkött, lök, feferoni, kebabsås" data-en="Tomato sauce, cheese, kebab meat, onion, pepperoncini, kebab sauce">Tomatsås, ost, kebabkött, lök, feferoni, kebabsås</p>
                 </div>
-                <span>135 kr</span>
+                <span class="menu-price">135 kr</span>
               </li>
             </ul>
           </article>
-
-          <article class="menu-card">
+          <article class="menu-card" data-category="vegetariskt">
             <div class="menu-card-header">
               <h3 data-i18n data-sv="Vegetariskt" data-en="Vegetarian">Vegetariskt</h3>
-              <span>Ⓥ</span>
+              <span class="menu-card-tag" data-i18n data-sv="Veg" data-en="Veg">Veg</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong>Verde Ⓥ</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, paprika, oliver, rödlök"
-                    data-en="Tomato sauce, cheese, bell pepper, olives, red onion"
-                  >
-                    Tomatsås, ost, paprika, oliver, rödlök
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Verde</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, paprika, oliver, rödlök" data-en="Tomato sauce, cheese, bell pepper, olives, red onion">Tomatsås, ost, paprika, oliver, rödlök</p>
                 </div>
-                <span>112 kr</span>
+                <span class="menu-price">112 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Bianco Veg Ⓥ</strong>
-                  <p
-                    data-i18n
-                    data-sv="Crème fraîche, mozzarella, spenat, fetaost"
-                    data-en="Crème fraîche, mozzarella, spinach, feta cheese"
-                  >
-                    Crème fraîche, mozzarella, spenat, fetaost
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Bianco Veg</strong>
+                  </div>
+                  <p data-i18n data-sv="Crème fraîche, mozzarella, spenat, fetaost" data-en="Crème fraîche, mozzarella, spinach, feta cheese">Crème fraîche, mozzarella, spenat, fetaost</p>
                 </div>
-                <span>118 kr</span>
+                <span class="menu-price">118 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Halloumi Deluxe Ⓥ</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, halloumi, zucchini, ruccola"
-                    data-en="Tomato sauce, cheese, halloumi, zucchini, arugula"
-                  >
-                    Tomatsås, ost, halloumi, zucchini, ruccola
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Halloumi Deluxe</strong>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, halloumi, zucchini, ruccola" data-en="Tomato sauce, cheese, halloumi, zucchini, arugula">Tomatsås, ost, halloumi, zucchini, ruccola</p>
                 </div>
-                <span>125 kr</span>
+                <span class="menu-price">125 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Truffle Garden Ⓥ ★</strong>
-                  <p
-                    data-i18n
-                    data-sv="Crème fraîche, mozzarella, svamp, tryffelolja, parmesan"
-                    data-en="Crème fraîche, mozzarella, mushrooms, truffle oil, parmesan"
-                  >
-                    Crème fraîche, mozzarella, svamp, tryffelolja, parmesan
-                  </p>
+              <li class="menu-item is-popular">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Truffle Garden</strong>
+                    <span class="badge badge-popular" data-i18n data-sv="Populär" data-en="Popular">Populär</span>
+                  </div>
+                  <p data-i18n data-sv="Crème fraîche, mozzarella, svamp, tryffelolja, parmesan" data-en="Crème fraîche, mozzarella, mushrooms, truffle oil, parmesan">Crème fraîche, mozzarella, svamp, tryffelolja, parmesan</p>
                 </div>
-                <span>129 kr</span>
+                <span class="menu-price">129 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Greek Summer Ⓥ 🥗</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomatsås, ost, fetaost, oliver, tomat, rödlök"
-                    data-en="Tomato sauce, cheese, feta cheese, olives, tomato, red onion"
-                  >
-                    Tomatsås, ost, fetaost, oliver, tomat, rödlök
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Greek Summer</strong>
+                    <span class="badge badge-tag" data-i18n data-sv="Sallad" data-en="Salad">Sallad</span>
+                  </div>
+                  <p data-i18n data-sv="Tomatsås, ost, fetaost, oliver, tomat, rödlök" data-en="Tomato sauce, cheese, feta cheese, olives, tomato, red onion">Tomatsås, ost, fetaost, oliver, tomat, rödlök</p>
                 </div>
-                <span>122 kr</span>
+                <span class="menu-price">122 kr</span>
               </li>
             </ul>
           </article>
-
-          <article class="menu-card">
+          <article class="menu-card" data-category="barn">
             <div class="menu-card-header">
               <h3 data-i18n data-sv="Barnmeny" data-en="Kids menu">Barnmeny</h3>
-              <span>👧</span>
+              <span class="menu-card-tag" data-i18n data-sv="Barn" data-en="Kids">Barn</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong>Mini Margherita 👧</strong>
-                  <p
-                    data-i18n
-                    data-sv="Liten pizza med ost och tomatsås"
-                    data-en="Small pizza with cheese and tomato sauce"
-                  >
-                    Liten pizza med ost och tomatsås
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Mini Margherita</strong>
+                  </div>
+                  <p data-i18n data-sv="Liten pizza med ost och tomatsås" data-en="Small pizza with cheese and tomato sauce">Liten pizza med ost och tomatsås</p>
                 </div>
-                <span>65 kr</span>
+                <span class="menu-price">65 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Mini Vesuvio 👧</strong>
-                  <p
-                    data-i18n
-                    data-sv="Liten pizza med skinka och ost"
-                    data-en="Small pizza with ham and cheese"
-                  >
-                    Liten pizza med skinka och ost
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Mini Vesuvio</strong>
+                  </div>
+                  <p data-i18n data-sv="Liten pizza med skinka och ost" data-en="Small pizza with ham and cheese">Liten pizza med skinka och ost</p>
                 </div>
-                <span>69 kr</span>
+                <span class="menu-price">69 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Nuggets & Fries 👧</strong>
-                  <p
-                    data-i18n
-                    data-sv="Kycklingnuggets med pommes och mild dip"
-                    data-en="Chicken nuggets with fries and a mild dip"
-                  >
-                    Kycklingnuggets med pommes och mild dip
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Nuggets & Fries</strong>
+                  </div>
+                  <p data-i18n data-sv="Kycklingnuggets med pommes och mild dip" data-en="Chicken nuggets with fries and a mild dip">Kycklingnuggets med pommes och mild dip</p>
                 </div>
-                <span>75 kr</span>
+                <span class="menu-price">75 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Pannkaksrulle 👧</strong>
-                  <p
-                    data-i18n
-                    data-sv="Serveras med sylt och glass"
-                    data-en="Served with jam and ice cream"
-                  >
-                    Serveras med sylt och glass
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Pannkaksrulle</strong>
+                  </div>
+                  <p data-i18n data-sv="Serveras med sylt och glass" data-en="Served with jam and ice cream">Serveras med sylt och glass</p>
                 </div>
-                <span>59 kr</span>
+                <span class="menu-price">59 kr</span>
               </li>
             </ul>
           </article>
-
-          <article class="menu-card">
+          <article class="menu-card" data-category="sallader">
             <div class="menu-card-header">
               <h3 data-i18n data-sv="Sallader" data-en="Salads">Sallader</h3>
-              <span>🥗</span>
+              <span class="menu-card-tag" data-i18n data-sv="Fräscht" data-en="Fresh">Fräscht</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong>Caesar 🥗</strong>
-                  <p
-                    data-i18n
-                    data-sv="Romansallad, kyckling, parmesan, krutonger"
-                    data-en="Romaine lettuce, chicken, parmesan, croutons"
-                  >
-                    Romansallad, kyckling, parmesan, krutonger
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Caesar</strong>
+                  </div>
+                  <p data-i18n data-sv="Romansallad, kyckling, parmesan, krutonger" data-en="Romaine lettuce, chicken, parmesan, croutons">Romansallad, kyckling, parmesan, krutonger</p>
                 </div>
-                <span>119 kr</span>
+                <span class="menu-price">119 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Greek Salad 🥗 Ⓥ</strong>
-                  <p
-                    data-i18n
-                    data-sv="Tomat, gurka, oliver, fetaost, rödlök"
-                    data-en="Tomato, cucumber, olives, feta cheese, red onion"
-                  >
-                    Tomat, gurka, oliver, fetaost, rödlök
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Greek Salad</strong>
+                    <span class="badge badge-tag" data-i18n data-sv="Veg" data-en="Veg">Veg</span>
+                  </div>
+                  <p data-i18n data-sv="Tomat, gurka, oliver, fetaost, rödlök" data-en="Tomato, cucumber, olives, feta cheese, red onion">Tomat, gurka, oliver, fetaost, rödlök</p>
                 </div>
-                <span>112 kr</span>
+                <span class="menu-price">112 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Kebab Salad 🥗</strong>
-                  <p
-                    data-i18n
-                    data-sv="Grönmix, kebabkött, tomat, lök, kebabsås"
-                    data-en="Green mix, kebab meat, tomato, onion, kebab sauce"
-                  >
-                    Grönmix, kebabkött, tomat, lök, kebabsås
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Kebab Salad</strong>
+                  </div>
+                  <p data-i18n data-sv="Grönmix, kebabkött, tomat, lök, kebabsås" data-en="Green mix, kebab meat, tomato, onion, kebab sauce">Grönmix, kebabkött, tomat, lök, kebabsås</p>
                 </div>
-                <span>122 kr</span>
+                <span class="menu-price">122 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong>Halloumi Salad 🥗 Ⓥ</strong>
-                  <p
-                    data-i18n
-                    data-sv="Sallad, halloumi, paprika, granatäpple, lime"
-                    data-en="Lettuce, halloumi, bell pepper, pomegranate, lime"
-                  >
-                    Sallad, halloumi, paprika, granatäpple, lime
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong>Halloumi Salad</strong>
+                    <span class="badge badge-tag" data-i18n data-sv="Veg" data-en="Veg">Veg</span>
+                  </div>
+                  <p data-i18n data-sv="Sallad, halloumi, paprika, granatäpple, lime" data-en="Lettuce, halloumi, bell pepper, pomegranate, lime">Sallad, halloumi, paprika, granatäpple, lime</p>
                 </div>
-                <span>124 kr</span>
+                <span class="menu-price">124 kr</span>
               </li>
             </ul>
           </article>
-
-          <article class="menu-card">
+          <article class="menu-card" data-category="dryck">
             <div class="menu-card-header">
-              <h3 data-i18n data-sv="Dryck & dessert" data-en="Drinks & dessert">
-                Dryck & dessert
-              </h3>
-              <span data-i18n data-sv="Tillbehör" data-en="Extras">Tillbehör</span>
+              <h3 data-i18n data-sv="Dryck & dessert" data-en="Drinks & dessert">Dryck & dessert</h3>
+              <span class="menu-card-tag" data-i18n data-sv="Tillbehör" data-en="Extras">Tillbehör</span>
             </div>
             <ul class="menu-list">
-              <li>
-                <div>
-                  <strong
-                    data-i18n
-                    data-sv="Läsk 33 cl"
-                    data-en="Soft drink 33 cl"
-                  >
-                    Läsk 33 cl
-                  </strong>
-                  <p data-i18n data-sv="Cola, Fanta, Sprite" data-en="Cola, Fanta, Sprite">
-                    Cola, Fanta, Sprite
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong data-i18n data-sv="Läsk 33 cl" data-en="Soft drink 33 cl">Läsk 33 cl</strong>
+                  </div>
+                  <p data-i18n data-sv="Cola, Fanta, Sprite" data-en="Cola, Fanta, Sprite">Cola, Fanta, Sprite</p>
                 </div>
-                <span>20 kr</span>
+                <span class="menu-price">20 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong data-i18n data-sv="Mineralvatten" data-en="Sparkling water">
-                    Mineralvatten
-                  </strong>
-                  <p
-                    data-i18n
-                    data-sv="Naturell eller citron"
-                    data-en="Still or lemon"
-                  >
-                    Naturell eller citron
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong data-i18n data-sv="Mineralvatten" data-en="Sparkling water">Mineralvatten</strong>
+                  </div>
+                  <p data-i18n data-sv="Naturell eller citron" data-en="Still or lemon">Naturell eller citron</p>
                 </div>
-                <span>18 kr</span>
+                <span class="menu-price">18 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong data-i18n data-sv="Tiramisu" data-en="Tiramisu">Tiramisu</strong>
-                  <p
-                    data-i18n
-                    data-sv="Krämig italiensk dessert"
-                    data-en="Creamy Italian dessert"
-                  >
-                    Krämig italiensk dessert
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong data-i18n data-sv="Tiramisu" data-en="Tiramisu">Tiramisu</strong>
+                  </div>
+                  <p data-i18n data-sv="Krämig italiensk dessert" data-en="Creamy Italian dessert">Krämig italiensk dessert</p>
                 </div>
-                <span>55 kr</span>
+                <span class="menu-price">55 kr</span>
               </li>
-              <li>
-                <div>
-                  <strong data-i18n data-sv="Glassbägare" data-en="Ice cream cup">
-                    Glassbägare
-                  </strong>
-                  <p
-                    data-i18n
-                    data-sv="Vanilj, choklad eller jordgubb"
-                    data-en="Vanilla, chocolate, or strawberry"
-                  >
-                    Vanilj, choklad eller jordgubb
-                  </p>
+              <li class="menu-item">
+                <div class="menu-item-body">
+                  <div class="menu-item-title">
+                    <strong data-i18n data-sv="Glassbägare" data-en="Ice cream cup">Glassbägare</strong>
+                  </div>
+                  <p data-i18n data-sv="Vanilj, choklad eller jordgubb" data-en="Vanilla, chocolate, or strawberry">Vanilj, choklad eller jordgubb</p>
                 </div>
-                <span>39 kr</span>
+                <span class="menu-price">39 kr</span>
               </li>
             </ul>
           </article>

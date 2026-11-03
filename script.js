@@ -77,3 +77,28 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => observer.observe(section));
 
 setLanguage("sv");
+
+const menuFilters = document.querySelectorAll(".menu-filter");
+const menuCards = document.querySelectorAll(".menu-card[data-category]");
+const menuGrid = document.querySelector(".menu-grid");
+const menuFeatured = document.querySelector(".menu-featured");
+
+menuFilters.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    const showAll = filter === "all";
+
+    menuFilters.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-pressed", String(isActive));
+    });
+
+    menuCards.forEach((card) => {
+      card.classList.toggle("is-hidden", !showAll && card.dataset.category !== filter);
+    });
+
+    menuGrid?.classList.toggle("is-filtered", !showAll);
+    menuFeatured?.classList.toggle("is-hidden", !showAll);
+  });
+});
