@@ -68,8 +68,7 @@ a {
 
 .hero {
   position: relative;
-  padding: 1rem 0 2rem;
-  min-height: 100vh;
+  padding: 0.5rem 0 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -182,12 +181,11 @@ h3 {
 }
 
 .hero-content {
-  flex: 1;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
-  padding: 3.5rem 0 2rem;
+  padding: 2rem 0 2.5rem;
 }
 
 .eyebrow,
@@ -200,10 +198,11 @@ h3 {
 }
 
 .hero-copy h1 {
-  font-size: clamp(3rem, 6.2vw, 5.6rem);
-  line-height: 1;
+  font-size: clamp(2.8rem, 5.4vw, 4.9rem);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
   margin: 0.9rem 0 1.25rem;
-  max-width: 11ch;
+  max-width: 13ch;
 }
 
 .lead {
@@ -684,12 +683,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: auto;
-  }
-
   .hero-content {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     gap: 2.5rem;
   }
 

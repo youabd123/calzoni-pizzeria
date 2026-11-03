@@ -16,6 +16,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero-pizza-1200.jpg"
+      imagesrcset="images/hero-pizza-800.jpg 800w, images/hero-pizza-1200.jpg 1200w"
+      imagesizes="(max-width: 920px) 100vw, 42vw"
+    />
   </head>
   <body>
     <div class="site-header">
@@ -119,19 +126,15 @@
 
         <div class="hero-visual hero-reveal">
           <div class="hero-image">
+            <!-- Photo via Unsplash (Unsplash License), served from this repo -->
             <img
-              src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=80"
-              srcset="
-                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80   600w,
-                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1100&q=80 1100w,
-                https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1600&q=80 1600w
-              "
-              sizes="(max-width: 920px) 100vw, 44vw"
-              width="1100"
-              height="1375"
+              src="images/hero-pizza-1200.jpg"
+              srcset="images/hero-pizza-800.jpg 800w, images/hero-pizza-1200.jpg 1200w"
+              sizes="(max-width: 920px) 100vw, 42vw"
+              width="1200"
+              height="1500"
               alt="Nygräddad pizza med mozzarella och basilika från vedugnen"
               fetchpriority="high"
-              decoding="async"
             />
           </div>
 
